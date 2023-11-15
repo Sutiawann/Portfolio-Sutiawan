@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-[#0C0C0E]">
+<body class="bg-[#0C0C0E]">  
     <!-- Header Start -->
     <header class="absolute top-0 left-0 z-10 flex items-center justify-center w-full bg-transparent">
         <div class="container">
             <div class="relative flex items-center justify-between">
                 <div class="px-4">
-                    <img src="img/navbar/logo.png" alt="" class="w-16 lg:w-20">
+                    <img src="img/navbar/logo.png" class="w-16 lg:w-20">
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
@@ -25,26 +25,24 @@
                         <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
                     </button>
 
-                    <nav id="nav-menu"
-                        class="absolute hidden w-full py-5 shadow-lg rounded-lg right-4 top-full bg-[#180A1D] h-[800px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:h-[100px]">
-                        <ul class="block lg:flex">
-                            <li class="group"><a href="#home"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">Beranda</a>
+                    <nav id="nav-menu" class="absolute hidden w-full py-5 shadow-lg rounded-lg right-4 top-full bg-[#180A1D] h-[800px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:h-[100px]">
+                        <ul class="items-center block lg:flex">
+                            <li class="group"><a href="#home" class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-focus:text-yellow-500">Beranda</a>
                             </li>
                             <li class="group"><a href="#about"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">About
+                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500">About
                                     Saya</a></li>
                             <li class="group"><a href="#skills"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">Skills</a>
+                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500">Skills</a>
                             </li>
                             <li class="group"><a href="#tools"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">Tools</a>
+                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500">Tools</a>
                             </li>
                             <li class="group"><a href="#education"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">Education</a>
+                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500">Education</a>
                             </li>
-                            <li class="group"><a href="#sertif"
-                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500 group-hover:font-bold">Certificate</a>
+                            <li class="group"><a href="#certificate"
+                                    class="flex justify-center py-2 mx-8 text-white transition-all group-hover:text-yellow-500">Certificate</a>
                             </li>
                         </ul>
                     </nav>
@@ -64,8 +62,7 @@
                     <h2 class="mb-5 text-lg font-medium text-gray-300 lg:text-2xl">UI/UX Designer & Content Creator</h2>
                     <p class="mb-10 font-normal leading-relaxed text-gray-300">Desain bukan sekedar bagaimana sesuatu
                         terlihat, tetapi juga bagaimana sesuatu berfungsi.</p>
-                    <a href="img/Cv-Sutiawann.pdf" download=""
-                        class="px-8 py-3 text-base font-bold transition-all rounded-lg btn-primary hover:text-sm">Download
+                    <a href="img/Cv-Sutiawann.pdf" download class="px-8 py-3 m-auto text-base font-bold transition-all rounded-lg btn-primary">Download
                         CV</a>
                 </div>
                 <div class="self-end w-full px-4 lg:w-1/2">
@@ -169,7 +166,7 @@
     <!-- Tools End -->
 
     <!-- Project Start -->
-    <section id="project" class="py-28 lg:py-52">
+    <section id="projects" class="py-28 lg:py-52">
         <div class="w-full">
             <h4 class="flex justify-center mb-16 text-2xl font-bold text-yellow-500 lg:text-5xl">PROJECTS</h4>
         </div>
@@ -262,36 +259,37 @@
     <!-- Education Start -->
     <section id="education" class="py-28 lg:py-52 bg-[#221127]">
         <div class="container mx-auto">
-            <div class="flex flex-wrap">
                 <div class="px-4">
                     <h4 class="flex justify-center mb-16 text-2xl font-bold text-center text-yellow-500 lg:text-5xl">
                         EDUCATION HISTORY</h4>
-                    <img src="img/education/education.png" class="w-10 mx-auto">
                 </div>
-            </div>
+                <img src="img/education/education.png" class="w-3/4 mx-auto">
         </div>
     </section>
     <!-- Education End -->
 
-    <section class="bg-primary py-28">
-        <div class="px-4 mb-4 lg:px-28">
-            <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center" id="default-tab"
+    <section class="bg-primary py-28" id="experience">
+        <div class="w-full">
+            <h4 class="flex justify-center mb-16 text-2xl font-bold text-yellow-500 lg:text-5xl">EXPERIENCE</h4>
+        </div>
+        <div class="px-4 mb-10 lg:px-28">
+            <ul class="flex flex-wrap justify-center -mb-px text-base font-medium text-center lg:text-2xl" id="default-tab"
                 data-tabs-toggle="#default-tab-content" role="tablist">
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-white hover:border-white"
+                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-yellow-500 hover:border-yellow-500 active:text-yellow-500 focus:text-yellow-500 focus:border-yellow-500"
                         id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
                         aria-selected="false">Ekskul Multimedia</button>
                 </li>
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-white hover:border-white"
-                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-                        aria-controls="dashboard" aria-selected="false">Praktik Kerja Lapangan (PKL)</button>
+                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-yellow-500 hover:border-yellow-500 active:text-yellow-500 focus:text-yellow-500 focus:border-yellow-500"
+                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+                        aria-selected="false">Praktik Kerja Lapangan (PKL)</button>
                 </li>
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-white hover:border-white"
+                        class="inline-block p-4 text-gray-400 border-b-2 rounded-t-lg hover:text-yellow-500 hover:border-yellow-500 active:text-yellow-500 focus:text-yellow-500 focus:border-yellow-500"
                         id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
                         aria-selected="false">Freelance</button>
                 </li>
@@ -299,49 +297,41 @@
         </div>
         <div id="default-tab-content">
             <div class="hidden p-4 px-5 rounded-lg lg:px-28" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="flex flex-col justify-center p-6 space-4 rounded-xl">
-                    <div class="grid items-center gap-4 lg:grid-cols-2">
-                        <img src="img/experience/mulmet.png" class="object-fill">
-                        <div class="content">
-                            <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">22 Juni 2022 - 1 Januari 2023
-                            </h2>
-                            <h1 class="mt-4 text-2xl font-semibold text-white">Ekstrakurikuler Multimedia</h1>
-                            <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
+                <div class="flex flex-wrap items-center justify-center gap-10 p-6 rounded-xl">
+                    <img src="img/experience/mulmet.png" class="w-full lg:w-1/4 md:w-1/4">
+                    <div class="w-full lg:w-1/2 content">
+                        <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">22 Juni 2022 - 1 Januari 2023
+                        </h2>
+                        <h1 class="mt-4 text-2xl font-semibold text-white">Ekstrakurikuler Multimedia</h1>
+                        <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
                                 ketika ada kumpulan, suka ikut bantu ngedit video waktu itu saya pernah ngedit acara 17
                                 agustus tahun 2022, acara hari jadi SMKN 1 Sumedang, dan Bemo Season 1.</p>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hidden p-4 px-5 rounded-lg lg:px-28" id="dashboard" role="tabpanel"
-                aria-labelledby="dashboard-tab">
-                <div class="flex flex-col justify-center p-6 space-4 rounded-xl">
-                    <div class="grid items-center gap-4 lg:grid-cols-2">
-                        <img src="img/experience/sawala.png" class="object-fill">
-                        <div class="content">
-                            <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">09 Januari 2023 - 19 Mei 2023
-                            </h2>
-                            <h1 class="mt-4 text-2xl font-semibold text-white">Praktik Kerja Lapangan (PKL)</h1>
-                            <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
-                                ketika ada kumpulan, suka ikut bantu ngedit video waktu itu saya pernah ngedit acara 17
-                                agustus tahun 2022, acara hari jadi SMKN 1 Sumedang, dan Bemo Season 1.</p>
-                        </div>
+            <div class="hidden p-4 px-5 rounded-lg lg:px-28" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                <div class="flex flex-wrap items-center justify-center gap-10 p-6 rounded-xl">
+                    <img src="img/experience/sawala.png" class="w-full lg:w-1/4 md:w-1/4">
+                    <div class="w-full lg:w-1/2 content">
+                        <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">09 Januari 2023 - 19 Mei 2023
+                        </h2>
+                        <h1 class="mt-4 text-2xl font-semibold text-white">Praktik Kerja Lapangan (PKL)</h1>
+                        <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
+                            ketika ada kumpulan, suka ikut bantu ngedit video waktu itu saya pernah ngedit acara 17
+                            agustus tahun 2022, acara hari jadi SMKN 1 Sumedang, dan Bemo Season 1.<.</p>
                     </div>
                 </div>
             </div>
-            <div class="hidden p-4 px-5 rounded-lg lg:px-28" id="settings" role="tabpanel"
-                aria-labelledby="settings-tab">
-                <div class="flex flex-col justify-center p-6 space-4 rounded-xl">
-                    <div class="grid items-center gap-4 lg:grid-cols-2">
-                        <img src="img/experience/frelence.png" class="object-fill">
-                        <div class="content">
-                            <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">26 Mei 2023 - Sekarang</h2>
-                            <h1 class="mt-4 text-2xl font-semibold text-white">Freelance at PT Sawala Inovasi Indonesia
-                            </h1>
-                            <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
+            <div class="hidden p-4 px-5 rounded-lg lg:px-28" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                <div class="flex flex-wrap items-center justify-center gap-10 p-6 rounded-xl">
+                    <img src="img/experience/frelence.png" class="w-full lg:w-1/4 md:w-1/4">
+                    <div class="w-full lg:w-1/2 content">
+                        <h2 class="text-xl font-semibold text-yellow-500 sm:text-lg">26 Mei 2023 - Sekarang
+                        </h2>
+                        <h1 class="mt-4 text-2xl font-semibold text-white">Freelance at PT Sawala Inovasi Indonesia</h1>
+                        <p class="mt-4 text-base font-normal text-white">Saya aktif di eskul ini sering datang
                                 ketika ada kumpulan, suka ikut bantu ngedit video waktu itu saya pernah ngedit acara 17
                                 agustus tahun 2022, acara hari jadi SMKN 1 Sumedang, dan Bemo Season 1.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -349,12 +339,12 @@
     </section>
 
     <!-- Sertifikat Start -->
-    <section id="sertif" class="pb-52 pt-10 bg-[#221127] lg:pt-28">
+    <section id="certificate" class="pb-52 pt-10 bg-[#221127] lg:pt-28">
         <div class="container mx-auto">
             <div class="w-full px-4">
                 <h4 class="flex justify-center mb-16 text-2xl font-bold text-yellow-500 lg:text-5xl">CERTIFICATE</h4>
-                <img src="img/certificate/sertif.png" alt="" class="mx-auto ">
             </div>
+            <img src="img/certificate/sertif.png" alt="" class="w-1/2 mx-auto">
         </div>
     </section>
     <!-- Sertifikat End -->
